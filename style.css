@@ -1,0 +1,148 @@
+@font-face {
+    font-family: fonty;
+    src: url(GT-Pressura-Mono-Regular.ttf);
+}
+body{
+	background: #001313;
+}
+p{
+	color: 758ea4;
+	font-size: 18px;
+}
+p::before{
+	content: "~ ";
+}
+p::after{
+	content: " ~";
+}
+a{
+	padding: .1em;
+	color: #577590;
+	text-decoration: none;
+	font-family: fonty;
+	font-size: 16px;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+/*=======Image=======*/
+.image{
+	position: absolute;
+	border: 3.5px solid #0c4767;
+	height: 30%;
+	width: 25%;
+	top: 25%;
+	margin-left: 37.5%;
+	background-size: cover;
+	transition: .4s;
+}
+/*=======Search Bar=======*/
+input {
+    position:absolute;
+	margin: 0;
+	width: 40%;
+	height: auto;
+    top: 58%;
+	margin-left: 30%;
+	text-align: center;
+    font-size: 23px;
+	color: white;
+    padding: .5em;
+    -webkit-transition: width 0.6s ease-in-out;
+    transition: width 0.6s ease-in-out;
+	background: transparent;
+	transition: .2s;
+	border: 3.5px solid #0c4767;
+	font-family: fonty;
+}
+
+input:focus{
+	padding: 1.1em;
+    outline-width: 0;
+}
+/*=======Container=======*/
+.container{
+	position: absolute;
+	border: 3.5px solid #0c4767;
+	background: transparent;
+	width: 6%;
+	height: 30%;
+	top: 25%;
+	transition: .2s;
+	font-family: fonty;
+}
+/*=======Left Container=======*/
+#left{
+	right: 63.4%;
+}
+#left:hover{
+	width: 25%;
+}
+/*=======Right Container=======*/
+#right{
+	left: 64.2%;
+}
+#right:hover{
+	width: 25%;
+}
+/*=======Menu=======*/
+.menu{
+	position:relative;
+	height: 100%;
+	width: 100%;
+	background: transparent;
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+	overflow: hidden;
+}
+/*=======Columns=======*/
+.col{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+#col-1{
+	width: 33.33%;
+	height: 100%;
+}
+#col-2{
+	width: 33.33%;
+	height: 100%;
+}
+#col-3{
+	width: 33.33%;
+	height: 100%;
+}
+/*=======Icon Tray=======*/
+.iconTray{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#icon1-r, #icon2-r, #icon3-r, #icon1-l, #icon2-l, #icon3-l{
+	height: 33.33%;
+	width: 100%;
+}
+img{
+	position: relative;
+	top: 30%;
+    display:block;
+    margin: auto;
+	height: 40%;
+}
+/*=======Bar=======*/
+.outline{
+	position: absolute;
+	top: 2%;
+	bottom: 2%;
+	right: 1%;
+	left: 1%;
+	background: transparent;
+	border: 5px solid #0c4767;
+	transition: .3s;
+	pointer-events: none;
+}
